@@ -2,7 +2,7 @@
 Gcode converter from [LaserWEB4](https://github.com/LaserWeb/LaserWeb4) generated Gcode to Marlin compatible Gcode
 I use my old 3D printer with RAMPS and Marlin fimware for laser engraving and cutting, but pretty good program LASER WEB is not compatible with Marlin firmware, I hope, that is only temporary solution and Laser WEB will support Marlin firmware soon.  
 sorry only for Windows (Visual Studio 2017)  
-[windows binary](gcodeconverter.exe)
+[windows binary](..\raw\master\gcodeconverter.exe)
 
 Gcode from LaserWEB application
   
