@@ -1,7 +1,8 @@
 # GcodeConverter
 Gcode converter from [LaserWEB4](https://github.com/LaserWeb/LaserWeb4) generated Gcode to Marlin compatible Gcode
-I use my old 3D printer with RAMPS and Marlin fimware for laser engraving and cutting, but pretty good program LASER WEB is not compatible with Marlin firmware, I hope, that is only 
+I use my old 3D printer with RAMPS and Marlin fimware for laser engraving and cutting, but pretty good program LASER WEB is not compatible with Marlin firmware, I hope, that is only temporary solution and Laser WEB will support Marlin firmware soon.  
 sorry only for Windows (Visual Studio 2017)
+[windows binary]()
 
 Gcode from LaserWEB application
   
@@ -23,8 +24,8 @@ to Marlin compatible form
   G1 X34.76 
 
 Version 1.0
-  * make verbose Gcode command **X10 S1.0** convert to **M106 S255** and **G1 X10**
+  * make verbose Gcode command, **X10 S1.0** is converted to **M106 S255** and **G1 X10**
   * if laser start time > 0 then command **G4 Pxx** is added
   * when PWM is disabled converter uses  **M106** without **S** parameter
-  * you can customize **LASER ON** and **OFF** commands
-  *
+  * you can customize **LASER ON** and **OFF** commands (for RAMPS D9 output for PWM )
+  * multiple **X** commands without **S** parametr are converted to single command **G1 Xlast_position**, all the same for **Y** command
