@@ -2,6 +2,7 @@
 Gcode converter from LaserWEB generated Gcode to Marlin compatible Gcode
 
 Gcode from LaserWEb application
+  
   G0 X34.26 Y63.52 S0.0000
   G1 X34.36 S0.0196
   X34.56 S0.0627
